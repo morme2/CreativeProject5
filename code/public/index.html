@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+  <title>Stop spending money you don't have.</title>
+</head>
+
+<body>
+  <div id="page-container">
+    <div id="content-wrap">
+      <div id="app">
+        <h1>Stop spending money you don't have on things you don't need to impress people who don't care.</h1>
+        <h2>My name: <input v-model="addedName"></h2>
+        <button v-on:click="getItems()">Load My Budget</button>
+        <h2>My budget: $<input v-model="budget"></h2>
+        <div v-for="expense in expenses">
+          <input v-model="expense.eName"> $
+          <input v-model="expense.eMoney">
+          <button v-on:click="deleteItem(expense)" class="delete">X</button>
+        </div>
+        <h2>Budget remaining: ${{remaining}}</h2>
+        <button v-on:click="addExpense()">Add Expense</button>
+        <button v-on:click="postInfo()">Save My Budget</button>
+
+      </div>
+    </div>
+    <footer>
+      <a href="https://github.com/morme2/CreativeProject5">GitHub Link</a>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.7/vue.js" integrity="sha256-g+Q8DFAmG5+eyRPSydX0LY4TfjsL11XSDrIGerbbEdA=" crossorigin="anonymous"></script>
+  <script src="/script.js"></script>
+</body>
+
+</html>

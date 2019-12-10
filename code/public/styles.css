@@ -1,0 +1,66 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 20px 100px 0px 100px;
+    background-image: url("https://previews.123rf.com/images/valeriaz/valeriaz1602/valeriaz160200369/67821998-currency-seamless-pattern-dollar-sign-background-texture-with-usd-paper-money-symbols-light-line-obj.jpg");
+}
+
+textarea {
+    width: 100%;
+    max-width: 500px;
+    height: 100px;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+
+.ticket {
+    display: flex;
+}
+
+img.a {
+    vertical-align: text-bottom;
+}
+
+h1 {
+    background-color: #00008B;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.problem {
+    flex: 5;
+}
+
+.delete {
+    flex: 1;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;
+    /* Footer height */
+}
+
+#app {
+    background: #f3f3f3;
+    padding: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    /* Footer height */
+}
